@@ -11,7 +11,7 @@
   --dark-gray: #303030;
   --pry-color: #181886;
   --sec-color: #6060b3;
-  --white: rgb(245, 245, 245);
+  --white: #ffffff;
   --dark: #1a1919;
 }
 
@@ -28,6 +28,7 @@ body {
 
 .container {
   max-width: 136.6rem;
+  margin: 0 auto;
   padding: 2rem;
 }
 

@@ -3,31 +3,11 @@ nav {
   justify-content: space-between;
   padding: 1.5rem 0;
 
-  .logo {
-    text-align: center;
-    cursor: pointer;
-
-    & span:nth-child(1) {
-      display: inline-block;
-      color: var(--white);
-      background: var(--pry-color);
-      padding: .6rem;
-      border-radius: 50%;
-      margin-right: .5rem;
-    }
-
-    & span:nth-child(2) {
-      font-size: 1.5rem;
-      color: var(--pry-color);
-      font-weight: bold;
-    }
-  }
-
   .navlinks {
     & .about {
       margin-right: 2rem;
       color: var(--pry-color);
-      font-size: 1.5rem;
+      font-size: 1.8rem;
       font-weight: bold;
     }
     
@@ -36,7 +16,7 @@ nav {
       color: var(--white);
       padding: .5rem 1.5rem;
       border-radius: .5rem;
-      font-size: 1.5rem;
+      font-size: 1.8rem;
       font-weight: bold;
 
       &:hover {
