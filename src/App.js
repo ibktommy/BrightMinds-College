@@ -1,9 +1,16 @@
+import React from "react";
+import { Route, Routes } from "react-router";
+import Navbar from "./components/Navbar/Navbar.jsx";
+import Home from "./pages/Home/Home.jsx";
+
 function App() {
-  return (
-		<>
-			<h1>BrightMind | Admissions</h1>
-			<p>hello</p>admin love customer     
-		</>
+	return (
+		<div className="container">
+			<Navbar />
+			<Routes>
+				<Route exact path="/" element={<Home />} />
+			</Routes>
+		</div>
 	);
 }
 

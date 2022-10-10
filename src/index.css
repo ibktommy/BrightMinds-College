@@ -6,8 +6,44 @@
   box-sizing: border-box;
 }
 
+:root {
+  --light-gray: #b8b8b8;
+  --dark-gray: #303030;
+  --pry-color: #181886;
+  --sec-color: #6060b3;
+  --white: rgb(245, 245, 245);
+  --dark: #1a1919;
+}
+
 html {
   font-family: 'Nunito', sans-serif;
   font-size: 62.5%;
+}
+
+body {
+  position: relative;
   line-height: 1.4;
+  background: var(--white);
+}
+
+.container {
+  max-width: 136.6rem;
+  padding: 2rem;
+}
+
+h1 {
+  font-size: 2.4rem;
+  text-transform: capitalize;
+  color: var(--pry-color);
+}
+
+h2 {
+  font-size: 1.4rem;
+  text-transform: uppercase;
+  color: var(--sec-color);
+}
+
+.para {
+  font-size: 1.5rem;
+  color: var(--dark-gray);
 }
