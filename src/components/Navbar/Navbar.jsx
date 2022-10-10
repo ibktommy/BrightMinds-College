@@ -4,14 +4,17 @@ import "./Navbar.scss";
 
 const Navbar = () => {
 	return (
-		<nav>
-			<div className="logo">
-				<span>Bright</span>
-				<span>Minds</span>
-			</div>
+		<nav className="flex">
+			<Link to="/">
+				<div className="logo flex">
+					<span>BM</span>
+					<span>BrightMinds</span>
+				</div>
+			</Link>
 
 			<div className="navlinks">
-				<Link to="/about">About</Link>
+				<Link to="/about" className="about">About</Link>
+				<Link to="/login" className="login">Login</Link>
 			</div>
 		</nav>
 	);
