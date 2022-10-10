@@ -33,13 +33,16 @@ body {
 }
 
 h1 {
-  font-size: 2.4rem;
+  font-size: 2.5rem;
+  font-weight: 900;
   text-transform: capitalize;
   color: var(--pry-color);
+  margin-top: 1rem;
+  letter-spacing: .1rem;
 }
 
 h2 {
-  font-size: 1.4rem;
+  font-size: 1.2rem;
   text-transform: uppercase;
   color: var(--sec-color);
 }
@@ -47,6 +50,7 @@ h2 {
 .para {
   font-size: 1.5rem;
   color: var(--dark-gray);
+  margin-top: 1rem;
 }
 
 .flex {
@@ -62,4 +66,33 @@ h2 {
 
 a {
   text-decoration: none;
+}
+
+.btn {
+  display: inline-block;
+  font-size: 1.5rem;
+  font-weight: 300;
+  letter-spacing: .1rem;
+  color: var(--pry-color);
+  background: none;
+  padding: 1rem 1.5rem;
+  border-radius: .4rem;
+  border: .2rem solid var(--pry-color);
+  cursor: pointer;
+}
+
+.btn:hover {
+  background: var(--pry-color);
+  color: var(--white);
+  transition: .4s ease;
+}
+
+.btn.bg {
+  color: var(--white);
+  background: var(--pry-color);
+}
+
+.btn.bg:hover {
+  color: var(--pry-color);
+  background: none;
 }
