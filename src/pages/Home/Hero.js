@@ -1,4 +1,5 @@
 import React from "react";
+import "./Hero.scss";
 import HeroImage from "../../images/student-2.jpg";
 import { TbCertificate } from "react-icons/tb";
 import { GiTeacher } from "react-icons/gi";
