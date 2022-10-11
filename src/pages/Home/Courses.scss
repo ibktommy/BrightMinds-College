@@ -35,3 +35,21 @@
     }
   }
 }
+
+// MEDIA
+@media screen and (max-width: 768px) {
+  .section-course {
+    .courses {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      max-width: 100%;
+      gap: 2rem;
+
+      &-item {
+        width: 25rem;
+        margin-right: 0;
+      }
+    }
+  }
+}
