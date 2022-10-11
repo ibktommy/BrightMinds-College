@@ -5,6 +5,9 @@ import studentImg from "../../images/student-3.jpg";
 import { students } from "./TestimonialData";
 
 const Testimonial = () => {
+  // SLIDER FUNCTIONALITY
+  
+
 	return (
 		<section className="testimonial">
 			<h3>Testimonial</h3>
@@ -30,18 +33,26 @@ const Testimonial = () => {
 				</div>
 
 				<div className="testimonial-content-right">
-					{students.map(({ id, name, image, course, text }) => (
-						<div key={id} className="testimonial-content-right_box">
-							<p className="para">{text}</p>
-							<article className="flex">
-								<img src={image} alt={name} />
-								<div>
-									<p className="name">{name}</p>
-									<p className="course">{course}</p>
-								</div>
-							</article>
-						</div>
-					))}
+					<div className="slider flex">
+						{students.map(({ id, name, image, course, text }) => (
+							<div key={id} className="testimonial-content-right_box">
+								<p className="para">{text}</p>
+								<article className="flex">
+									<img src={image} alt={name} />
+									<div>
+										<p className="name">{name}</p>
+										<p className="course">{course}</p>
+									</div>
+								</article>
+							</div>
+						))}
+					</div>
+
+					<div className="slider-content">
+						<button className="slider-content_btn"></button>
+						<button className="slider-content_btn"></button>
+						<button className="slider-content_btn"></button>
+					</div>
 				</div>
 			</div>
 		</section>

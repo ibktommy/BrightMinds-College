@@ -43,11 +43,20 @@ h1 {
 }
 
 h3 {
-  font-size: 2.1rem;
-  font-weight: 600;
+  font-size: 2.2rem;
+  font-weight: 700;
   color: var(--pry-color);
-  margin-bottom: 2rem;
+  margin-bottom: 4rem;
   text-transform: uppercase;
+  letter-spacing: .1rem;
+  text-shadow: 1px 1px 1px #42424227;
+}
+
+h4 {
+  font-size: 2rem;
+  font-weight: bold;
+  color: var(--dark-gray);
+  text-transform: capitalize;
 }
 
 h2 {
@@ -56,12 +65,6 @@ h2 {
   color: var(--sec-color);
 }
 
-h4 {
-  font-size: 1rem;
-  font-weight: bold;
-  color: var(--dark-gray);
-  text-transform: capitalize;
-}
 
 .para {
   font-size: 1.5rem;
@@ -114,7 +117,8 @@ a {
 }
 
 /* MEDIA 500px */
-h1 {
+@media screen and (max-width: 500px) {
+  h1 {
   font-size: 2.2rem;
 }
 
@@ -122,12 +126,12 @@ h3 {
   font-size: 1.8rem;
 }
 
-h2 {
-  font-size: 1.1rem;
+h4 {
+  font-size: 1.8rem;
 }
 
-h4 {
-  font-size: 1.9rem;
+h2 {
+  font-size: 1.1rem;
 }
 
 .para {
@@ -136,4 +140,5 @@ h4 {
 
 .para br {
   display: none;
+}
 }
