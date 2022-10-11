@@ -46,7 +46,7 @@ h3 {
   font-size: 2.2rem;
   font-weight: 700;
   color: var(--pry-color);
-  margin-bottom: 4rem;
+  margin-bottom: 3rem;
   text-transform: uppercase;
   letter-spacing: .1rem;
   text-shadow: 1px 1px 1px #42424227;
@@ -67,7 +67,7 @@ h2 {
 
 
 .para {
-  font-size: 1.5rem;
+  font-size: 1.6rem;
   color: var(--dark-gray);
   margin-top: 1rem;
 }
@@ -118,12 +118,12 @@ a {
 
 /* MEDIA 500px */
 @media screen and (max-width: 500px) {
-  h1 {
+h1 {
   font-size: 2.2rem;
 }
 
 h3 {
-  font-size: 1.8rem;
+  font-size: 2rem;
 }
 
 h4 {
@@ -135,7 +135,7 @@ h2 {
 }
 
 .para {
-  font-size: 1.3rem;
+  font-size: 1.4rem;
 }
 
 .para br {
