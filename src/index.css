@@ -96,3 +96,21 @@ a {
   color: var(--pry-color);
   background: none;
 }
+
+/* MEDIA 500px */
+h1 {
+  font-size: 2.2rem;
+  font-weight: 900;
+}
+
+h2 {
+  font-size: 1.1rem;
+}
+
+.para {
+  font-size: 1.3rem;
+}
+
+.para br {
+  display: none;
+}
