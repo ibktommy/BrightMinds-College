@@ -39,12 +39,27 @@ h1 {
   color: var(--pry-color);
   margin-top: 1rem;
   letter-spacing: .1rem;
+  line-height: 1.6;
+}
+
+h3 {
+  font-size: 2.1rem;
+  font-weight: 800;
+  color: var(--pry-color);
+  margin-bottom: 1.5rem;
+  text-transform: uppercase;
 }
 
 h2 {
   font-size: 1.2rem;
   text-transform: uppercase;
   color: var(--sec-color);
+}
+
+h4 {
+  font-size: 1rem;
+  font-weight: bold;
+  color: var(--dark-gray);
 }
 
 .para {
@@ -100,11 +115,18 @@ a {
 /* MEDIA 500px */
 h1 {
   font-size: 2.2rem;
-  font-weight: 900;
+}
+
+h3 {
+  font-size: 1.8rem;
 }
 
 h2 {
   font-size: 1.1rem;
+}
+
+h4 {
+  font-size: 1.9rem;
 }
 
 .para {
