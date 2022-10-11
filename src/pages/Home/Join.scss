@@ -1,0 +1,35 @@
+.join {
+  width: 80%;
+  margin-left: auto;
+  margin-right: auto;
+  background: var(--pry-color);
+  border-radius: 1rem;
+  min-height: 20rem;
+  padding: 2rem;
+  text-align: center;
+
+  p {
+    color: var(--white);
+    font-size: 3rem;
+    font-weight: bold;
+    text-transform: capitalize;
+    width: 80%;
+    margin: 0 auto;
+    letter-spacing: .1rem;
+    margin-bottom: 2rem;
+  }
+
+  a button {
+    background: var(--sec-color);
+    color: var(--white);
+    border: 0;
+    font-size: 1.6rem;
+    border: .2rem solid var(--sec-color);
+
+    &:hover {
+      border: .2rem solid var(--sec-color);
+      background: none;
+      box-shadow: rgba(0,0,0,.12) 0px 1px 3px, rgba(0,0,0,.24) 0px 1px 2px;
+    }
+  }
+}
