@@ -1,0 +1,62 @@
+.testimonial {
+  width: 90%;
+  margin-left: auto;
+  margin-right: auto;
+  h3 {
+    text-align: center;
+  }
+
+  &-content {
+    justify-content: space-between;
+    align-items: flex-start;
+
+    &-left {
+      width: 55rem;
+      margin-right: 2rem;
+
+      p {
+        width: 70%;
+        margin: 1.5rem 0;
+      }
+    }
+
+    &-right {
+      width: 50rem;
+      min-height: 20rem;
+      padding: 2rem;
+      box-shadow: rgba(0,0,0,.12) 0px 1px 3px, rgba(0,0,0,.24) 0px 1px 2px;
+      overflow-x: hidden;
+
+      &_box {
+        width: 100%;
+
+        article {
+          margin-top: 3rem;
+          align-items: flex-start;
+
+          img {
+            margin-right: 1.5rem;
+            width: 6rem;
+            height: 6rem;
+            object-fit: cover;
+            border-radius: 50%;
+            filter: drop-shadow(2px 2px 1px #585858);
+          }
+
+          div {
+            .name {
+              font-weight: bold;
+              font-size: 1.3rem;
+              letter-spacing: .1rem;
+            }
+
+            .course {
+              font-style: italic;
+              font-size: 1.1rem;
+            }
+          }
+        }
+      }
+    }
+  }
+}

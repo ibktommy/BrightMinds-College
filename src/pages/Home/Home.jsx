@@ -3,6 +3,7 @@ import Courses from "./Courses";
 import Hero from "./Hero";
 import "./Home.scss";
 import Join from "./Join";
+import Testimonial from "./Testimonial";
 
 const Home = () => {
 	return (
@@ -10,6 +11,7 @@ const Home = () => {
 			<Hero />
 			<Courses />
 			<Join />
+			<Testimonial />
 		</main>
 	);
 };
