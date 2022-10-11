@@ -1,12 +1,39 @@
-import React from "react";
+import React, { useEffect } from "react";
 import { Link } from "react-router-dom";
 import "./Testimonial.scss";
-import studentImg from "../../images/student-3.jpg";
 import { students } from "./TestimonialData";
 
 const Testimonial = () => {
-  // SLIDER FUNCTIONALITY
-  
+	// SLIDER FUNCTIONALITY
+	function slider() {
+		let sliderButtonsArray = Array.from(
+			document.querySelector(".slider-content").children,
+		);
+
+		sliderButtonsArray.forEach((button, id) => {
+			button.addEventListener("click", (e) => {
+				console.log(button, id);
+
+				let slider = document.querySelector(".slider");
+
+				if (id === 0) {
+					slider.style.transform = "translateX(0%)";
+				} else if (id === 1) {
+					slider.style.transform = "translateX(-25%)";
+				} else if (id === 2) {
+					slider.style.transform = "translateX(-50%)";
+				} else if (id === 3) {
+					slider.style.transform = "translateX(-75%)";
+				} else {
+					return;
+				}
+			});
+		});
+	}
+
+	useEffect(() => {
+		slider();
+	}, []);
 
 	return (
 		<section className="testimonial">
@@ -17,14 +44,15 @@ const Testimonial = () => {
 					<h4>
 						see what our students <br /> say about us
 					</h4>
-					<p>
+					<p className="para">
 						Lorem ipsum, dolor sit amet consectetur adipisicing elit. Labore
 						ipsum dignissimos odio incidunt quaerat ut. Lorem ipsum dolor sit
 						amet, consectetur adipisicing elit. Aliquid, praesentium.
 						<br />
 						<br />
 						Lorem ipsum dolor sit amet consectetur, adipisicing elit.
-						Voluptatibus, ipsum?
+						Voluptatibus, ipsum? Lorem, ipsum dolor sit amet consectetur
+						adipisicing elit.
 					</p>
 
 					<Link to="/about">
@@ -49,6 +77,7 @@ const Testimonial = () => {
 					</div>
 
 					<div className="slider-content">
+						<button className="slider-content_btn"></button>
 						<button className="slider-content_btn"></button>
 						<button className="slider-content_btn"></button>
 						<button className="slider-content_btn"></button>
