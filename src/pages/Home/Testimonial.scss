@@ -86,6 +86,10 @@
           border: none;
           cursor: pointer;
 
+          &.active {
+            background: var(--pry-color);
+          }
+
           &:focus {
             background: var(--pry-color);
           }

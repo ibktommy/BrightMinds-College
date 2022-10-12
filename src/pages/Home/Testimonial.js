@@ -6,24 +6,30 @@ import { students } from "./TestimonialData";
 const Testimonial = () => {
 	// SLIDER FUNCTIONALITY
 	function slider() {
+		// Get First Button
+		let firstButton = document.querySelector(".active");
+
+		// Turn the Slider-Buttons in an Array
 		let sliderButtonsArray = Array.from(
 			document.querySelector(".slider-content").children,
 		);
 
+		// Add click Event on Each of the buttons to perform action
 		sliderButtonsArray.forEach((button, id) => {
-			button.addEventListener("click", (e) => {
-				console.log(button, id);
-
+			button.addEventListener("click", () => {
 				let slider = document.querySelector(".slider");
 
 				if (id === 0) {
 					slider.style.transform = "translateX(0%)";
 				} else if (id === 1) {
 					slider.style.transform = "translateX(-25%)";
+					firstButton.classList.remove("active");
 				} else if (id === 2) {
 					slider.style.transform = "translateX(-50%)";
+					firstButton.classList.remove("active");
 				} else if (id === 3) {
 					slider.style.transform = "translateX(-75%)";
+					firstButton.classList.remove("active");
 				} else {
 					return;
 				}
@@ -77,7 +83,7 @@ const Testimonial = () => {
 					</div>
 
 					<div className="slider-content">
-						<button className="slider-content_btn"></button>
+						<button className="slider-content_btn active"></button>
 						<button className="slider-content_btn"></button>
 						<button className="slider-content_btn"></button>
 						<button className="slider-content_btn"></button>
