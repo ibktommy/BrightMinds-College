@@ -6,7 +6,7 @@ import "./Footer.scss";
 const Footer = () => {
 	return (
 		<section className="footer">
-			<div className="footer-container">
+			<div className="footer-container flex">
 				<div className="footer-container-left">
 					<Logo />
 					<p className="para">
@@ -20,7 +20,7 @@ const Footer = () => {
 						<FaTwitter className="socials" />
 					</div>
 				</div>
-				<div className="footer-container-right">
+				<div className="footer-container-right flex">
 					<div className="footer-container-right_list">
 						<h4>Courses</h4>
 						<div className="footer-container-right_list-items">

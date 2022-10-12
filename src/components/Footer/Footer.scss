@@ -1,0 +1,55 @@
+.footer {
+  width: 100vw;
+  margin: 0 auto;
+  background: rgb(236, 217, 217);
+
+  &-container {
+    max-width: 136.6rem;
+    margin: 0 auto;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding: 4rem 0 0 2rem;
+
+    &-left {
+      max-width: 45rem;
+      p {
+        margin: 1.5rem 0;
+      }
+
+      &_socials {
+        svg {
+          display: inline-block;
+          width: 2.5rem;
+          height: 2.5rem;
+          fill: var(--pry-color);
+
+          &:nth-child(2) {
+            margin: 0 1.5rem;
+          }
+        }
+      }
+    }
+
+    &-right {
+      align-items: flex-start;
+
+      &_list {
+        margin-right: 8rem;
+
+        h4 {
+          font-size: 2rem;
+          color: var(--pry-color);
+          margin-bottom: 1rem;
+        }
+
+        &-items {
+          p {
+            font-size: 1.6rem;
+            margin-bottom: .5rem;
+            cursor: pointer;
+          }
+        }
+      }
+    }
+  }
+}
