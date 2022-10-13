@@ -19,6 +19,8 @@ const Register = () => {
 						<label htmlFor="lastName">last name</label>
 						<input type="text" name="lastName" id="lastName" />
 					</div>
+				</div>
+				<div className="form-div">
 					<div className="form-div_items">
 						<label htmlFor="email">email name</label>
 						<input type="email" name="email" id="email" />
@@ -27,6 +29,8 @@ const Register = () => {
 						<label htmlFor="number">phone name</label>
 						<input type="number" name="number" id="number" />
 					</div>
+				</div>
+				<div className="form-div">
 					<div className="form-div_selection">
 						<select name="gender" id="gender">
 							<option value="none" selected>
@@ -46,9 +50,10 @@ const Register = () => {
 							<option value="married">married</option>
 						</select>
 					</div>
-
-					<div className="form-div_item">
-						<label htmlFor="password"></label>
+				</div>
+				<div className="form-div">
+					<div className="form-div_items">
+						<label htmlFor="password">Enter password</label>
 						<input type="password" name="password" id="password" />
 					</div>
 				</div>
