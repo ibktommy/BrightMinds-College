@@ -8,22 +8,49 @@ nav {
     & .about {
       margin-right: 2rem;
       color: var(--pry-color);
-      font-size: 1.8rem;
+      font-size: 1.6rem;
       font-weight: bold;
     }
     
-    & .login {
+    .login, .register {
+      padding: .5rem 1rem;
+      border-radius: .5rem;
+      font-size: 1.5rem;
+      font-weight: bold;
+      border: .2rem solid var(--pry-color);
+    }
+
+    .login {
+      margin-right: .5rem;
       background: var(--pry-color);
       color: var(--white);
-      padding: .5rem 1.5rem;
-      border-radius: .5rem;
-      font-size: 1.8rem;
-      font-weight: bold;
 
       &:hover {
-        background: var(--sec-color);
+        background: transparent;
+        color: var(--pry-color);
         transition: .4s ease;
       }
+    }
+
+    .register {
+      background: transparent;
+
+      &:hover {
+        color: var(--white);
+        background: var(--pry-color);
+        transition: .4s ease;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 590px) {
+  nav {
+    flex-direction: column;
+    padding-top: .2rem;
+
+    .navlinks {
+      margin-top: 3rem;
     }
   }
 }
