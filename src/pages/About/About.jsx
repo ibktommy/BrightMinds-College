@@ -1,6 +1,7 @@
 import React from "react";
 import "./About.scss";
 import welcomeimg from "../../images/student-3.jpg";
+import { SiBookstack } from "react-icons/si";
 
 function About() {
 	return (
@@ -26,8 +27,8 @@ function About() {
 							voluptatibus, iure deleniti velit?
 						</p>
 
-						<article>
-							icon
+						<article className="flex">
+							<SiBookstack />
 							<div>
 								<h5>Best Quality Courses</h5>
 								<p className="para">

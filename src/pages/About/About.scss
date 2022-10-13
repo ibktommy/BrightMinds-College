@@ -43,10 +43,38 @@
 
 		&_right {
 			margin-left: 10rem;
+			border: .1rem solid #000;
 
       h4 {
         margin-top: 1rem;
       }
+
+			p {
+				// border: .1rem solid #000;
+				width: 80%;
+			}
+
+			article {
+				margin-top: 1.5rem;
+				
+				svg {
+					display: inline-block;
+					margin-right: 1.5rem;
+					width: 5rem;
+					height: 5rem;
+					fill: var(--white);
+					background: var(--sec-color);
+					border-radius: 5rem;
+					padding: .8rem;
+				}
+
+				h5 {
+					font-size: 1.6rem;
+					text-transform: capitalize;
+					color: var(--dark-gray);
+					margin-bottom: -.9rem;
+				}
+			}
 
 		}
 	}
