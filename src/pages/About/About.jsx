@@ -25,7 +25,7 @@ function About() {
 						image,
 					} = item;
 
-					let evenIdNum = id % 2;
+					let evenIdNum = id % 2; // Checking if id of item is an even-number or old-number
 
 					return (
 						<div
