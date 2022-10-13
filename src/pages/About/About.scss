@@ -1,14 +1,22 @@
 .about {
 	min-height: 70vh;
-  margin-top: 10rem;
+  margin-top: 6rem;
 
 	&-col {
 		max-width: 90%;
 		margin: 0 auto 5rem auto;
 		justify-content: space-between;
 
+		&.reverse {
+			flex-direction: row-reverse;
+		}
+
 		&_left {
 			max-width: 40rem;
+
+		&.reverse {
+			flex-direction: column-reverse;
+		}
 
 			&-img {
 				position: relative;
@@ -42,6 +50,10 @@
 
 		&_right {
 			margin-left: 10rem;
+
+			&.reverse {
+				flex-direction: column-reverse;
+			}
 
       h4 {
         margin-top: 1rem;
@@ -84,6 +96,10 @@
 		&-col {
 			&_left {
 				width: 60rem;
+
+				&-img {
+					height: 30rem;
+				}
 			}
 
 			&_right {
@@ -101,9 +117,15 @@
 
 @media screen and (max-width: 890px) {
 	.about {
+		margin-top: 3rem;
+
 		&-col {
 			flex-direction: column;
 			justify-content: center;
+
+			&.reverse {
+				flex-direction: column;
+			}
 
 			&_left {
 				max-width: 28rem;
